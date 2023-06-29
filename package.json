@@ -1,0 +1,32 @@
+{
+  "name": "auto-translate-readme",
+  "version": "1.0.0",
+  "description": "This is a GitHub Action that automatically translate the readme in your repo to a specified language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build ./index.js -o dist --source-map",
+    "build:commit": "npm run build && git add . && git commit"
+  },
+   "keywords": [
+   "readme",
+   "translate",
+   "translator"
+  ],
+  "author": "kubecub & Xinwei Xiong (cubxxw)",
+  "license": "MIT",
+    "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@k3rn31p4nic/google-translate-api": "^1.1.1",
+    "http-proxy-agent": "^4.0.1",
+    "remark-parse": "^8.0.3",
+    "remark-stringify": "^8.1.1",
+    "simple-git": "^3.15.0",
+    "tunnel": "0.0.6",
+    "unified": "^9.1.0",
+    "unist-util-visit": "^2.0.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.23.0"
+  }
+}
