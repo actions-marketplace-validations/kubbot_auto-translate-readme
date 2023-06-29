@@ -20166,7 +20166,7 @@ const FileStatusSummary_1 = __webpack_require__(745);
  */
 class StatusSummary {
     constructor() {
-        this.not_add new= [];
+        this.not_added = [];
         this.conflicted = [];
         this.created = [];
         this.deleted = [];
@@ -23516,7 +23516,7 @@ async function commitChanges(lang) {
     "41898282+github-actions[bot]@users.noreply.github.com"
   );
   await git.commit(
-    `📚docs: add newREADME."${lang}".md translation via https://github.com/kubbot/auto-translate-readme`
+    `📚docs: add new readme."${lang}".md translation via https://github.com/kubbot/auto-translate-readme`
   );
   console.log("finished commit");
   await git.push();
