@@ -23529,7 +23529,6 @@ async function translateReadme() {
     await commitChanges(lang);
     console.log("Done");
   } catch (error) {
-    throw new Error(error);
   }
 }
 
